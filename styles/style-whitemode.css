@@ -115,10 +115,15 @@
   }
 }
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 3.0rem;
-  text-align: center; /* Center text*/
-  background: #ddd; /* Grey background */
+  padding: 6px;
+  margin-top: -9.5%;
+    /* negative value of footer height */
+  height: 9.5%;
+  clear: both;
+  background-color: black;
+}
+.footer h2 {
+    color: white;
+    margin-left: 35%;
+    margin-top: 11%;
 }
