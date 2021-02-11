@@ -1,3 +1,43 @@
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
 .header {
   padding: 80px; /* some padding */
   text-align: center; /* center the text */
@@ -78,54 +118,4 @@
   padding: 20px; /* Some padding */
   text-align: center; /* Center text*/
   background: #ddd; /* Grey background */
-}
-.loader-wrapper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #242f3f;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-.loader {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  border: 4px solid #Fff;
-  animation: loader 2s infinite ease;
-}
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: #fff;
-  animation: loader-inner 60s infinite ease-in;
-}
-@keyframes loader {
-  0% { transform: rotate(0deg);}
-  5% { transform: rotate(180deg);}
-  10% { transform: rotate(180deg);}
-  15% { transform: rotate(360deg);}
-  20% { transform: rotate(360deg);}
-  25% { transform: rotate(0deg);}
-  50% { transform: rotate(180deg);}
-  55% { transform: rotate(180deg);}
-  75% { transform: rotate(360deg);}
-  100% { transform: rotate(360deg);}
-}
-@keyframes loader-inner {
-  0% { height: 0%;}
-  5% { height: 0%;}
-  10% { height: 100%;}
-  15% { height: 100%;}
-  20% { height: 0%;}
-  25% { height: 0%;}
-  50% { height: 0%;}
-  55% { height: 100%;}
-  75% { height: 100%;}
-  100% { height: 0%;}
 }
