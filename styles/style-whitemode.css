@@ -103,7 +103,7 @@
   display: inline-block;
   width: 100%;
   background-color: #fff;
-  animation: loader-inner 6s infinite ease-in;
+  animation: loader-inner 60s infinite ease-in;
 }
 @keyframes loader {
   0% { transform: rotate(0deg);}
