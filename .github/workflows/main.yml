@@ -22,17 +22,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
-    - name: Checkmarx Action
-      uses: checkmarx-ts/checkmarx-github-action@<version>
-      with:
-        cxServer: https://checkmarx.company.com
-        cxAction: OsaScan
-        cxUsername: First.Last@company.com
-        cxPassword: ${{ secrets.CX_PASSWORD }}
-        cxTeam: \CxServer\SP\Company\TeamA
-        cxOsaLocationPath: $GITHUB_WORKSPACE
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.4
+      - name: HTMLProofer
+        uses: chabad360/htmlproofer@v1.1
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       #- uses: actions/checkout@v2
 
